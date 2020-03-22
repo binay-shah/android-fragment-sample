@@ -4,15 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+
 
 public class MainActivity extends AppCompatActivity {
 
     // TODO (1) Create a fragment1
 
-    Fragment fragment;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // TODO (3) Create a fragment 1 instance and display it using the Fragment manager
-        // TODO (4) dynamically add and replace fragments
+
+        FragmentManager fm = getSupportFragmentManager();
+
+
+        Fragment firstFragment = new FirstFragment();
+
+        fm.beginTransaction()
+                .add(R.id.fragment_container1, firstFragment)
+                .commit();
+
+
+
+        Fragment secondFragment = new SecondFragment();
+        fm.beginTransaction()
+                .add(R.id.fragment_container2, secondFragment)
+                .commit();
+
+
 
     }
 }

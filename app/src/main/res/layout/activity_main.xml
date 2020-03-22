@@ -11,6 +11,15 @@
 
     <!-- TODO (2) Create a container to hold the fragment -->
 
+    <FrameLayout
+        android:id="@+id/fragment_container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
 
+    <FrameLayout
+        android:id="@+id/fragment_container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
