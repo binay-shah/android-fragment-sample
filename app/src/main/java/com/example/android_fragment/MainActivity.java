@@ -8,6 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+/**
+ * https://developer.android.com/guide/components/fragments
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     // TODO (1) Create a fragment1
@@ -24,3 +28,5 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
+
+
