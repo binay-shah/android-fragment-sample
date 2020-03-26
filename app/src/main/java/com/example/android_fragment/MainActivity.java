@@ -18,4 +18,12 @@ public class MainActivity extends AppCompatActivity {
         // TODO (4) Set the adapter onto the view pager
 
     }
+
+
+    /**
+     *  TODO (5) setArguments(Bundle args)
+     * Instead of having 3 individual Fragment files that do practically the same,
+     * you can also pass in a String argument into the Fragment. Then that fragment can contain the logic
+     * to change the text displayed in the TextView depending on the String passed into it.
+     */
 }
